@@ -141,3 +141,7 @@ to show current rows in target:
 ./scylla-tools-java/bin/cqlsh $HOSTNAME 9044 -e "select * from mykeyspace.users"
 ```
 
+To validate with spark, you can run:
+```
+./submit_job_validator.sh
+```
