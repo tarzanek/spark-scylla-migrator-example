@@ -98,7 +98,7 @@ export PATH=$JAVA_HOME/bin:$PATH
 
 Verify you have the jar built:
 ```
-ls -la target/scala-2.11/scylla-migrator-assembly-0.0.1.jar
+ls -la scylla-migrator/target/scala-2.11/scylla-migrator-assembly-0.0.1.jar
 ```
 
 Verify in `spark-env` size of your spark cluster,
@@ -116,7 +116,7 @@ UI should be listening on $HOSTNAME:8080
 Submit the app:
 
 ```
-./submit_job_spark.sh
+./submit_job.sh
 ```
 
 You will see at the end few of:
