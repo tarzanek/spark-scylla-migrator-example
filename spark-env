@@ -1,8 +1,8 @@
 
 export HOSTIP=$HOSTNAME
 
-export CORES=1
-export MEMORY=2G
+export CORES=2
+export MEMORY=4G
 
 export SPARK_WORKER_INSTANCES=2
 

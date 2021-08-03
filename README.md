@@ -2,6 +2,8 @@ This demo shows how to run a spark scylla migration job between cassandra and sc
 
 Prerequisites:
 ---------------
+You need at least 4 cpus and 8G of memory to run this
+
 Read and run below carefully, any of steps is skipped or broken, the whole app will error out with weird messages ;-)
 Below works well in Fedora 34, replace the dnf/yum commands with their appropriate apt alternative for debian systems
 
@@ -144,4 +146,24 @@ to show current rows in target:
 To validate with spark, you can run:
 ```
 ./submit_job_validator.sh
+```
+
+To run with 4 executors check out:
+```
+./submit_job-4execs.sh
+```
+
+To run spark shell use:
+```
+./spark-shell.sh
+```
+or to use 2.5.2 connector:
+```
+./spark-shell25.sh
+```
+
+To use debugging for driver AND for (single) executor run:
+(you can attach to respective ports easily from Idea after loading the project)
+```
+./submit_job-debug.sh
 ```
